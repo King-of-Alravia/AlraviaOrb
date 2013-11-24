@@ -1,0 +1,128 @@
+Changelog for Alravia Orb
+=========================
+
+0.0.0
+=====
+
+- moved source from bitcoin-0.8.5
+- patched to be able to compile under windows
+- (net.cpp)	static const int MAX_OUTBOUND_CONNECTIONS = 16;
+- (main.cpp)	CMedianFilter<int> cPeerBlockCounts(16, 0); // Amount of blocks that other nodes claim to have
+- (net.cpp)	int nMaxConnections = 250;
+
+0.0.1
+=====
+
+- change filename in directory "./"	 		"bitcoin-qt.pro"		to	"orb-cave.pro"
+
+- chnage filename in directory "./src"			"bitcoinrpc.cpp"		to	"alraviaorbrpc.cpp"
+							"bitcoinrpc.h"			to	"alraviaorbrpc.h"
+
+- Change filename in directory "./src/qt"		"bitcoin.cpp"			to	"alraviaorb.cpp"
+							"bitcoin.qrc"			to	"alraviaorb.qrc"
+							"bitcoinaddressvalidator.cpp"	to	"alraviaorbaddressvalidator.cpp"
+							"bitcoinaddressvalidator.h"	to	"alraviaorbaddressvalidator.h"
+							"bitcoinamountfield.cpp"	to	"alraviaorbamountfield.cpp"
+							"bitcoinamountfield.h"		to	"alraviaorbamountfield.h"
+							"bitcoingui.cpp"		to	"alraviaorbgui.cpp"
+							"bitcoingui.h"			to	"alraviaorbgui.h"
+							"bitcoinstrings.cpp"		to	"alraviaorbstrings.cpp"
+							"bitcoinunits.ccp"		to	"alraviaorbunits.cpp"
+							"bitcoinunits.h"		to	"alraviaorbunits.h"
+							"sendcoinsdialog.cpp"		to	"sendorbsdialog.cpp"
+							"sendcoinsdialog.h"		to	"sendorsdialog.h"
+							"sendcoinsentry.cpp"		to	"sendorbsentry.cpp"
+							"sendcoinsentry.h"		to	"sendorbsenry.h"
+
+- change filename in directory "./src/qt/forms"		"sendcoinsdialog.ui"		to	"sendorbsdialog.ui"
+							"sendcoinsentry.ui"		to	"sendorbsentry.ui"
+
+- change filename in directory "./src/qt/locale"	"bitcoin_*.ts"			to	"alraviaorb_*.ts"	*update not done
+
+- change filename in directory "./src/qt/res"		"bitcoin-qt.rc"			to	"alraviaorb.rc"
+
+- change filename in directory "./src/qt/res/icons"	"bitcoin.icns"			to	"alraviaorb.icns"	*need to replace
+							"bitcoin.ico"			to	"alraviaorb.ico"	*need to replace
+							"bitcoin.png"			to	"alraviaorb.png"	*need to replace
+							"bitcoin_testnet.ico"		to	"alraviaorb_testnet.ico"*need to replace
+							"bitcoin_testnet.png"		to	"alraviaorb_testnet.png"*need to replace
+
+- change filename in directory "./src/qt/res/src"	"bitcoin.svg"			to	"alraviaorb,svg" *need to replace
+
+- Updated "./alraviaorb.pro"
+- updated "./src/makefile.mingw"
+- updated "./src/alert.h"
+- updaetd "./src/allocators.h"
+- updated "./src/alraviaorbrpc.cpp"
+- updated "./src/alraviaorbrpc.h"
+- updated "./src/clientversion.h" 			*Sets client version
+- updated "./src/hash.h"
+- updated "./src/init.cpp"
+- updated "./src/init.h"
+- updated "./src/rpcblockchain.cpp"
+- updated "./src/rpcdump.cpp"
+- updated "./src/rpcmining.cpp"
+- updated "./src/rpcnet.cpp"
+- updated "./src/rpcrawtransaction.cpp"
+- updated "./src/rpcwallet.cpp"
+- updated "./src/base58.h"
+- updated "./src/main.cpp"
+- updated "./src/main.h"
+- updated "./src/util.cpp"
+- updated "./src/util.h"
+- updated "./src/txdb.cpp"
+- updated "./src/txdb.h"
+- updated "./src/wallet.cpp"
+- updated "./src/wallet.h"
+- updated "./src/walletdb.cpp"
+- updated "./src/net.cpp" 				*Need to change DNSSEED servers
+- updated "./src/noui.cpp"
+- updated "./src/version.cpp"
+- updated "./src/protocol.h" 				*set port
+- updated "./src/qt/aboutdialog.cpp"
+- updated "./src/qt/sendorbsdialog.cpp"
+- updated "./src/qt/sendorbsdialog.h"
+- updated "./src/qt/sendorsentry.cpp"
+- updated "./src/qt/sendorsentry.h"
+- updated "./src/qt/signverifymessagedialog.cpp"
+- updated "./src/qt/alraviaorbunits.cpp"
+- updated "./src/qt/alraviaorbunits.h"
+- updated "./src/qt/alraviaorb.cpp"
+- updated "./src/qt/alraviaorb.qrc"
+- updated "./src/qt/alraviaorbgui.cpp"
+- updated "./src/qt/alraviaorbgui.h"
+- updated "./src/qt/res/alraviaorb.rc"
+- updated "./src/qt/alraviaorbaddressvalidator.cpp"
+- updated "./src/qt/alraviaorbaddressvalidator.h"
+- updated "./src/qt/alraviaorbamountfield.cpp"
+- updated "./src/qt/alraviaorbamountfield.h"
+- updated "./src/qt/clientmodel.cpp"			*Genisis block timestamp
+- updated "./src/qt/clientmodel.h"
+- updated "./src/qt/transactiontablemodel.cpp"
+- updated "./src/qt/addresstablemodel.cpp"
+- updated "./src/qt/addressbookpage.cpp"
+- updated "./src/qt/addressbookpage.h"
+- updated "./src/qt/alraviaorbstrings.cpp"
+- updated "./src/qt/guiutil.cpp"
+- updated "./src/qt/guiutil.h"
+- updated "./src/qt/optionsdialog.cpp"
+- updated "./src/qt/transactionrecord.cpp"
+- updated "./src/qt/optionsmodel.cpp"
+- updated "./src/qt/overviewpage.cpp"
+- updated "./src/qt/transactiondesc.cpp"
+- updated "./src/qt/transactionview.cpp
+- updated "./src/qt/rpcconsole.cpp"
+- updated "./src/qt/rpcconsole.h"
+- updated "./src/qt/walletframe.cpp"
+- updated "./src/qt/walletframe.h"
+- updated "./src/qt/walletmodel.cpp"
+- updated "./src/qt/walletmodel.h"
+- updated "./src/qt/walletstack.cpp"
+- updated "./src/qt/walletstack.h"
+- updated "./src/qt/walletview.cpp"
+- updated "./src/qt/walletview.h"
+- updated "./src/qt/forms/aboutdialog.ui"
+- updated "./src/qt/forms/optionsdialog.ui"
+- updated "./src/qt/forms/sendorsdialog.ui"
+- updaetd "./src/qt/forms/sendorbsentry.ui"
+- updated "./src/qt/forms/signverifymessagedialog.ui"
